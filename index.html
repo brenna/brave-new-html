@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>A Brave New HTML.</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/jquery-1.5.min.js"></script>
+		<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+		<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+			$(document).ready(function() {
+    			
+    			//add a class="current" to selected anchor link
+    			$("nav ul li a").click(function() {
+    				$("nav ul li a").removeClass("current"); //remove from any previously selected item
+      				$(this).addClass("current");
+    			});		
+    			
+    			//smooth scrolling
+    			$("nav").localScroll();		
+			});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<nav id="navigation">
+				<ul>
+					<li><a class="html5icon" href="#top" title="back to top"><span class="hide">html5</span></a></li>
+					<li><a class="icon1" href="#connectivity">connectivity</a></li>
+					<li><a class="icon2" href="#css3">css3</a></li>
+					<li><a class="icon3" href="#device">device access</a></li>
+					<li><a class="icon4" href="#graphics">3d graphics & effects</a></li>
+					<li><a class="icon5" href="#multimedia">multimedia</a></li>
+					<li><a class="icon6" href="#performance">performance & integration</a></li>
+					<li><a class="icon7" href="#semantics">semantics</a></li>
+					<li><a class="icon8" href="#offline">offline & storage</a></li>
+				</ul>				
+			</nav>
+			<header id="top">
+				<h1>A brave new html.</h1>
+			</header>
+			<section>
+				<hgroup id="intro">
+					<h2>Welcome to html5, the latest revolution in web markup.</h2>
+					<h2>Here's what's new...</h2>
+				</hgroup>
+				<article id="connectivity">
+					<h2>connectivity</h2>
+					<div class="left-col">
+						<p>HTML5 will include a new WebSocket API.  WebSockets facilitate continuous connections between a server and a client, so information can be sent back and forth without needing to reload the page. </p> 
+						<p>This enables faster communication with the server for an individual, but also facilitates multi-user interactions on a site.  Examples I've seen range from a simple chat to a gigantic collective Scrabble game.</p>
+						<p>Currently, the WebSockets API is fully supported in Safari and Chrome.</p>
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href="http://wordsquared.com" onclick="window.open(this.href); return false;">Scrabble MMO</a></li>
+							<li><a href="http://html5demos.com/web-socket" onclick="window.open(this.href); return false;">chat demo</a></li>
+							<li><a href="http://mrdoob.com/projects/multiuserpad/" onclick="window.open(this.href); return false;">multi-user sketch pad demo</a></li>
+						</ul>	
+					</aside>
+					<div class="icon icon1">&nbsp;</div>
+				</article>
+				
+				<article id="css3">
+					<h2>css3</h2>
+					<div class="left-col">
+						<p>CSS3 adds a wide range of new of styling capabilities to your HTML.  Graphic effects like opacity, gradients, and drop-shadows can now be creating using your CSS.  It also has enhanced selectors, animated transitions, and 3D transforms.</p>
+						<p>A lot of CSS3 is supported and ready to use now.  The gradient background on this box was created using CSS3. You might also notice rounded corners and a drop-shadow depending on your browser.  The opacity on the nav bar was also created with CSS3, and if you're using Safari or Chrome, you'll be treated to an animated fade when you mouse over the nav bar.</p>
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href="http://css3please.com/" onclick="window.open(this.href); return false;">CSS3 Please!</a></li>
+							<li><a href="http://sixrevisions.com/css/css3-techniques-you-should-know/" onclick="window.open(this.href); return false;">an intro to CSS3</a></li>
+							<li><a href="http://media.24ways.org/2009/14/5/index.html" onclick="window.open(this.href); return false;">animated photo gallery</a></li>
+							<li><a href="http://www.zurb.com/playground/sliding-vinyl" onclick="window.open(this.href); return false;">Sliding Vinyl demo</a></li>
+						</ul>	
+					</aside>
+					<div class="icon icon2">&nbsp;</div>
+				</article>
+				
+				<article id="device">
+					<h2>device access</h2>
+					<div class="left-col">
+						<p>HTML5 will be able to retrieve info about what you're using to browse the internet, as well as interface with components of your device. Knowing what kind of device you're using will prove useful as smartphones and tablets increase in prevalence. A site can be tailored based on things like the size of the device screen or the screen orientation.</p>
+						<p>A user's location can also be detected by HTML5.  Geolocation (with the user's consent, of course) already works in Firefox, Safari, Chrome, Opera, and both the Android an iOS browsers.  Again, this has lots of potential application for mobile devices.</p>
+						<p>As far as interfacing with your device goes, think cameras and microphones.  While not yet supported in any browser, the device element in html5 will be used to allow access to a user's camera and mic, enabling things like audio and video chat.</p>	
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href="http://diveintohtml5.org/geolocation.html" onclick="window.open(this.href); return false;">geolocation how-to</a></li>
+							<li><a href="http://merged.ca/iphone/html5-geolocation" onclick="window.open(this.href); return false;">geolocation on the iPhone demo</a></li>
+							<li><a href="https://labs.ericsson.com/developer-community/blog/beyond-html5-audio-capture-web-browsers" onclick="window.open(this.href); return false;">info on the &lt;device&gt; element</a></li>
+							<li><a href="https://labs.ericsson.com/developer-community/blog/beyond-html5-conversational-voice-and-video-implemented-webkit-gtk" onclick="window.open(this.href); return false;">video-chat demo</a></li>
+						</ul>	
+					</aside>
+					<div class="icon icon3">&nbsp;</div>
+				</article>
+				
+				<article id="graphics">
+					<h2>3d graphics & effects</h2>
+					<div class="left-col">
+						<p>New graphics elements in HTML5 include &lt;canvas&gt; and &lt;svg&gt;.</p>
+						<p>The &lt;canvas&gt; element is just that, a canvas that can be drawn on with JavaScript.  This can be used for simple animations or interactive widgets and games. WebGL extends upon the &lt;canvas&gt; element to create 3D animations.</p>
+						<p>The &lt;svg&gt;tag can be used to embed scalable vector graphics (like lines and ellipses) inline in your HTML. This means nice crisp graphics!</p>
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href="http://sixrevisions.com/html/bouncing-a-ball-around-with-html5-and-javascript/" onclick="window.open(this.href); return false;">canvas tutorial</a></li>
+							<li><a href="http://www.benjoffe.com/code/demos/canvascape/" onclick="window.open(this.href); return false;">3D Walker canvas demo</a></li>
+							<li><a href="http://www.alistapart.com/d/get-ready-for-html-5/gatto02.svg" onclick="window.open(this.href); return false;">vector drawing demo</a></li>
+						</ul>	
+					</aside>
+					<div class="icon icon4">&nbsp;</div>
+				</article>
+				
+				<article id="multimedia">
+					<h2>multimedia</h2>
+					<div class="left-col">
+						<p>HTML5 allows audio and video elements to be embedded in a page without the need for any third-party plug-ins. This is great news considering the vast amount of websites with multimedia components.</p>  
+						<p>The &lt;video&gt; tag works nearly identically to the existing &lt;img&gt; tag, where a source, width and height are specified. It also has some additional attributes like preload, autoplay, and controls. The video element should work in Firefox, Safari, Chrome and Opera, although there are some discrepancies on which video codecs each browser supports.</p>
+						<p>Even YouTube is giving it a try. You can opt-in to their trial HTML5 player to help test things out.</p>
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href="http://diveintohtml5.org/video.html" onclick="window.open(this.href); return false;">HTML5 video how-to</a></li>
+							<li><a href="http://shapeshed.com/examples/HTML5-video-element/" onclick="window.open(this.href); return false;">HTML5 video demo</a></li>
+							<li><a href="http://www.youtube.com/html5" onclick="window.open(this.href); return false;">YouTube HTML5 player</a></li>
+						</ul>	
+					</aside>
+					<div class="icon icon5">&nbsp;</div>
+				</article>
+				
+				<article id="performance">
+					<h2>performance & integration</h2>
+					<div class="left-col">
+						<p>Web workers, a new HTML5 feature,  are like helpers for JavaScript.  They can process their own code in the background while JavaScript continues to run to achieve multi-threaded style processing in JavaScript.   They're specifically meant to run longer calculations, so this can greatly increase the speed of your JavaScript.<p>
+
+						<p>HTML5's FileReader and FIle API's allow your OS and browser to interface together.  For example, you can drag a file from your desktop into a browser-based email client to add it as an attachment.  This drag and drop from OS to browser could also be used to submit a file for upload.</p>
+
+						<p>HTML5 also brings enhancements to AJAX file uploading, including the ability to upload multiple files at once and tracking an upload's progress.</p>
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href=" http://dev.opera.com/articles/view/web-workers-rise-up/" onclick="window.open(this.href); return false;">more on web workers</a></li>
+<li><a href="http://www.profilepicture.co.uk/demos/fileAPI/" onclick="window.open(this.href); return false;">drag & drop uploader demo</a></li>
+							<li><a href="http://www.profilepicture.co.uk/tutorials/ajax-file-upload-xmlhttprequest-level-2/" onclick="window.open(this.href); return false;">tutorial for uploader demo</a></li>					
+						</ul>	
+					</aside>
+					<div class="icon icon6">&nbsp;</div>
+				</article>
+				
+				<article id="semantics">
+					<h2>semantics</h2>
+					<div class="left-col">
+						<p>The new semantic elements in HTML5 make a website's underlying structure more meaningful.  Instead of using &lt;div&gt; tags to enclose every component of a web page, some common components now have their own HTML tags.</p>
+						<p>Take a look at the page source here and you'll see tags like &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, and &lt;article&gt; denoting exactly what you'd think they would.</p>
+						<p>Although a lot of HTML5 is years away from full browser support, semantic elements can be used already. Most browsers (i.e. not IE) will be able to interpret you new semantic tags, and with a little help from some JavaScript, they all will.</p>
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href="http://remysharp.com/2009/01/07/html5-enabling-script/" onclick="window.open(this.href); return false;">Remy Sharp's IE fix</a></li>
+							<li><a href="http://www.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/" onclick="window.open(this.href); return false;">Smashing Magazine tutorial</a></li>
+							<li><a href="http://www.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/" onclick="window.open(this.href); return false;">more on semantic elements</a></li>
+						</ul>	
+					</aside>
+					<div class="icon icon7">&nbsp;</div>
+				</article>
+				
+				<article id="offline">
+					<h2>offline & storage</h2>
+						<div class="left-col">
+							<p>HTML5 will allow enhanced caching for web apps and data.  The most obvious use of this is to make a web app (like email) available to users when they're not connected to the internet. It could also help web apps run smoother if a momentary signal drop occurs in the user's connection. In general, storing info locally can help web pages and apps load and run faster since less needs to be retrieved from a server.</p>
+
+							<p>So how does it work? Information about what to store for offline use goes into a "manifest" file, then simply add the manifest attribute to your html tag.</p>
+					</div> <!-- close left-col-->
+					<aside>
+						<ul>
+							<li><a href="http://html5doctor.com/go-offline-with-application-cache/" onclick="window.open(this.href); return false;">info on application caching</a></li>
+							<li><a href="http://blog.bitrzr.com/2010/10/html5-offline-webapps-practical-example.html " onclick="window.open(this.href); return false;">web-app Cube's implementation</a></li>
+						</ul>	
+					</aside>
+					<div class="icon icon8">&nbsp;</div>
+				</article>
+			</section>
+			<footer>
+				<p>&copy; 2011 <a href="http://brennaobrien.com">Brenna O'Brien</a></p>
+			</footer>
+		</div>
+	</body>
+
+</html>

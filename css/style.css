@@ -1,0 +1,231 @@
+@import url('reset.css');
+
+body {
+	background: url(../images/star-bg.jpg) repeat-x #110805;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:10pt;
+	color:#000;
+	line-height:1.3;
+}
+
+	p,aside{margin:10px 0;}
+	
+	a {
+		text-decoration:none;
+		outline:0;
+		/*color:#ea734e;*/
+		/*color:#e26447;*/
+		color:#dd5737;
+	}
+
+		a:hover {color:#249fbc;}
+					
+	h1, h2 {
+		font-weight:bold;
+	}
+		
+	h1 {
+		color:#f2f2ce;
+		font-size:300%;
+		text-align:center;
+		padding-top:30px;
+	}
+	
+	h2 {
+		font-size:200%;
+		border-bottom:solid 3px black;
+		margin-bottom:5px;
+	}
+	
+	span.hide {display:none;}
+	
+	
+
+#wrapper {
+	width:960px;
+	margin:0 auto;	
+}
+
+nav {
+	background: url(../images/nav-bg.png) no-repeat;
+	width:159px;
+	height:533px;
+	display:block;
+	position:fixed;
+	top:30px;
+	opacity:0.55;
+	
+   	/*smooth opacity change */
+    -moz-transition: opacity .5s ease-in;  
+      -o-transition: opacity .5s ease-in;  
+ -webkit-transition: opacity .5s ease-in;  
+         transition: opacity .5s ease-in; 
+         
+     -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+          border-radius: 5px; 
+}
+
+	nav:hover {
+		opacity:1;
+
+		/*smooth opacity change */
+     -moz-transition: opacity .4s ease-in;  
+       -o-transition: opacity .4s ease-in;  
+  -webkit-transition: opacity .4s ease-in;  
+          transition: opacity .4s ease-in;  
+
+		
+	}
+	
+	nav ul {padding:20px 10px 0 15px;;}	
+	
+	nav ul li {margin-bottom:15px;}
+
+
+	nav ul li a {
+		font-size:105%;
+		color:#000;
+		padding-left:40px;
+		display:block;
+		height:35px;
+	}
+	
+	
+	a.current {
+		color:#249fbc;
+		background-position:bottom left;
+	}	
+		
+	a.html5icon {
+		background: url(../images/html5nav.png) top left no-repeat;
+		height:50px;
+	}
+	
+	a.icon1 { background: url(../images/connectivity.png) top left no-repeat;}
+	
+	a.icon2 { background: url(../images/css3.png) top left no-repeat;}
+	
+	a.icon3 { background: url(../images/device.png) top left no-repeat;}
+	
+	a.icon4 { background: url(../images/graphics.png) top left no-repeat;}
+	
+	a.icon5 { background: url(../images/multimedia.png) top left no-repeat;}
+	
+	a.icon6 { background: url(../images/performance.png) top left no-repeat;}
+	
+	a.icon7 { background: url(../images/semantics.png) top left no-repeat;}
+	
+	a.icon8 { background: url(../images/offline.png) top left no-repeat;}
+	
+	nav ul li a:hover {background-position:bottom left;}
+	
+	
+header {
+	background: url(../images/solar-bg.jpg);
+	width:790px;
+	height:425px;
+	display:block;
+	float:right;
+	position:relative;
+}
+
+	
+
+section {padding:40px;}
+
+	/*fix for collapse*/
+	section:after{ 
+		content: ".";
+		display: block; 
+		height: 0;
+		clear: both; 
+		visibility: hidden; 
+	}
+
+hgroup#intro{
+	float:right;
+	width:710px;
+	padding:40px 0;
+	margin-top:20px;
+}
+
+	hgroup#intro h2{
+		color:#f2f2ce;	
+		font-weight:bold;
+		font-size:150%;
+		text-align:center;
+		border:none;
+	}
+		
+article {
+	position:relative;
+	float:right;
+	width:70%;
+	background:#f2f2ce;
+	margin:20px 0;
+	padding:40px;
+
+     -moz-border-radius: 15px; 
+  -webkit-border-radius: 20px; 
+          border-radius: 20px; 
+		  
+     -moz-box-shadow: 0px 4px 10px #1f8899; 
+  -webkit-box-shadow: 0px 4px 10px #1f8899; 
+          box-shadow: 0px 4px 10px #1f8899; 
+
+	
+  background-color: #f2f2ce;
+  background-image: -moz-linear-gradient(top, #f2f2ce, #a3d3d3); 
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f2f2ce),color-stop(1, #a3d3d3)); 
+  background-image: linear-gradient(top, #f2f2ce, #a3d3d3);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f2f2ce', EndColorStr='#a3d3d3'); 
+
+}
+	
+	article .left-col{
+		float:left;
+		width:70%;
+	}
+
+	article aside {
+		margin-left:10px;
+		float:right;
+		width:25%;
+	}
+	
+		aside ul li{margin-bottom:10px;}
+		
+		div.icon {
+			position:absolute;
+			bottom:30px;
+			right:40px;
+			height:70px;
+			width:70px;
+		}
+		
+		div.icon1 { background: url(../images/connectivity-large.png) bottom right no-repeat;}
+	
+		div.icon2 { background: url(../images/css3-large.png) right bottom no-repeat;}
+		
+		div.icon3 { background: url(../images/device-large.png) right bottom no-repeat;}
+		
+		div.icon4 { background: url(../images/graphics-large.png) top left no-repeat;}
+		
+		div.icon5 { background: url(../images/multimedia-large.png) top left no-repeat;}
+	
+		div.icon6 { background: url(../images/performance-large.png) top left no-repeat;}
+		
+		div.icon7 { background: url(../images/semantics-large.png) top left no-repeat;}
+		
+		div.icon8 { background: url(../images/offline-large.png) top left no-repeat;}
+
+
+footer {
+	float:left;
+	margin-left:230px;
+	margin-bottom:30px;
+	color:#f2f2ce;
+	font-weight:bold;
+	font-size:105%;
+}
