@@ -1,3 +1,3 @@
-# A brave new HTML5
+# A brave new HTML
 
-Simple info and demo site on HTML5 & CSS3 features.
+Info and demo site on HTML5 & CSS3 features.
